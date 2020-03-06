@@ -19,7 +19,6 @@ class ExpenseItem extends StatelessWidget{
       child: Row(
         children: <Widget>[
           Container(
-            color: Colors.blue,
             child: Icon(
               Icons.shopping_cart,
               color: Colors.white,
@@ -30,32 +29,36 @@ class ExpenseItem extends StatelessWidget{
           ),
           Expanded(
             child: Container(
-              color: Colors.green,
+              padding: EdgeInsets.only(left: 10.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text(
-                    
-                    'Restaurant', 
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20.0,
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      this.name, 
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20.0,
+                      ),
+                      textAlign: TextAlign.left,
                     ),
-                    textAlign: TextAlign.left,
                   ),
-                  Text(
-                    'You and 2 others',
-                    style: TextStyle(
-                      color: Colors.white
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      'You and 2 others',
+                      style: TextStyle(
+                        color: Colors.white
+                      ),
+                      textAlign: TextAlign.left,
                     ),
-                    textAlign: TextAlign.left,
                   ),
                 ],
               ),
             ),
           ),
           Container(
-            color: Colors.red,
             width: 110,
             padding: const EdgeInsets.all(20.0),
             child: Text(
