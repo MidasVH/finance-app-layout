@@ -1,16 +1,10 @@
 # finance_layout_test
+[x] create expense item widget
+[ ] make expense item fully dynamic with add
+[ ] [create donutchart in overview widget (maybe with different widget in the overview widget)](https://medium.com/flutter/beautiful-animated-charts-for-flutter-164940780b8c)
+[ ] make price add up for daily expenses
+[ ] make screen for add expenses
+[ ] add expenses via add expenses screen
+[ ] create sidebar menu
+...
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
