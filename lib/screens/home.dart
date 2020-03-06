@@ -32,6 +32,8 @@ class Home extends StatelessWidget {
             Text('4 March 2020', style: TextStyle(color: Colors.white, fontSize: 20.0)),
             SizedBox(height: 30.0),
             ExpenseItem('Shopping'),
+           
+
           ],
         ),
       ),
