@@ -1,13 +1,11 @@
+import 'package:finance_layout_test/model/Expense.dart';
 import 'package:flutter/material.dart';
 
 class ExpenseItem extends StatelessWidget{
   final String name;
-  //final String amount;
-  //final String category;
-  //final Color color;
+  final double price;
 
-  //const ExpenseItem(this.name, this.amount, this.category, this.color);
-  const ExpenseItem(this.name);
+  ExpenseItem(this.name, this.price);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -62,7 +60,7 @@ class ExpenseItem extends StatelessWidget{
             width: 110,
             padding: const EdgeInsets.all(20.0),
             child: Text(
-              '€30,00', 
+              (this.price).toStringAsFixed(2), 
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 20.0

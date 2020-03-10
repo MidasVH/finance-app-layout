@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>824935077049-rernjgqifjkeg3abf5jel6qod60tvcd0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.824935077049-rernjgqifjkeg3abf5jel6qod60tvcd0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDWw48NR00EToGu2I1AUH8z7a8YIr3VPYU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>824935077049</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.financeLayoutTest</string>
+	<key>PROJECT_ID</key>
+	<string>finance-test-83edc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>finance-test-83edc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:824935077049:ios:96f6771a3c25561cdef768</string>
+	<key>DATABASE_URL</key>
+	<string>https://finance-test-83edc.firebaseio.com</string>
+</dict>
+</plist>

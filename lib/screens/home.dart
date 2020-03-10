@@ -1,5 +1,5 @@
 
-import 'package:finance_layout_test/widgets/expense-item.dart';
+import 'package:finance_layout_test/widgets/expenses-list.dart';
 import 'package:finance_layout_test/widgets/overview-graph.dart';
 import 'package:flutter/material.dart';
 
@@ -23,19 +23,24 @@ class Home extends StatelessWidget {
           ),
         ],
       ),
-      body: Container(
-        child: ListView(
-          padding: const EdgeInsets.all(15.0),
-          children: <Widget>[
-            OverviewGraph(),
-            SizedBox(height: 30.0),
-            Text('4 March 2020', style: TextStyle(color: Colors.white, fontSize: 20.0)),
-            SizedBox(height: 30.0),
-            ExpenseItem('Shopping'),
-           
-
-          ],
-        ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          OverviewGraph(),
+          SizedBox(height: 30.0),
+          Align(
+            alignment: FractionalOffset(0.1, 0),
+            child: Text(
+              '3 March 2020', 
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.white,
+              ),
+            ),
+            
+          ),
+          Expanded(child: ExpensesList(),)
+        ],
       ),
       bottomNavigationBar: BottomAppBar(
         shape: const CircularNotchedRectangle(),
@@ -53,3 +58,4 @@ class Home extends StatelessWidget {
     );
   }
 }
+
