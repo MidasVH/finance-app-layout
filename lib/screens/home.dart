@@ -1,9 +1,28 @@
-
+import 'package:finance_layout_test/services/authentication.dart';
 import 'package:finance_layout_test/widgets/expenses-list.dart';
 import 'package:finance_layout_test/widgets/overview-graph.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
+  final BaseAuth auth;
+  final VoidCallback logoutCallback;
+  final String userId;
+
+  Home({Key key, this.auth, this.userId, this.logoutCallback})
+    : super(key: key);
+  
+  @override 
+  _HomeState createState() => new _HomeState();
+}
+
+class _HomeState extends State<Home>{
+  final GlobalKey formkey = GlobalKey<FormState>();
+
+  @override 
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -17,10 +36,16 @@ class Home extends StatelessWidget {
         centerTitle: true,
         leading: Icon(Icons.menu),
         actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.notifications, color: Colors.white,),
-            onPressed: () => { },
-          ),
+          new FlatButton(
+            child: new Text(
+              'Logout',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 18.0
+              )
+            ),
+            onPressed: () => signOut(),
+          )
         ],
       ),
       body: Column(
@@ -56,6 +81,16 @@ class Home extends StatelessWidget {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
+  }
+
+  signOut() async {
+    try {
+      print(widget.auth.getCurrentUser());
+      await widget.auth.signOut();
+      widget.logoutCallback();
+    }catch(e) {
+      print(e);
+    }
   }
 }
 
