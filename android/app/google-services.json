@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "824935077049",
+    "firebase_url": "https://finance-test-83edc.firebaseio.com",
+    "project_id": "finance-test-83edc",
+    "storage_bucket": "finance-test-83edc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824935077049:android:f4685e44a0bd9f24def768",
+        "android_client_info": {
+          "package_name": "com.example.finance_layout_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824935077049-ug57c2aak4gdsdm8hmbbc5bkbpjvna19.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_agVouIo76_hkqcshP7PvPkXyqR3R3ms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824935077049-ug57c2aak4gdsdm8hmbbc5bkbpjvna19.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "824935077049-rernjgqifjkeg3abf5jel6qod60tvcd0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.financeLayoutTest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

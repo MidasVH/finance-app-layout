@@ -80,7 +80,7 @@ class _LoginState extends State<LoginPage> {
       body: Stack(
           children: <Widget>[
             _showForm(),
-            //showCircularProgress(),
+            showCircularProgress(),
           ],
         )
     );

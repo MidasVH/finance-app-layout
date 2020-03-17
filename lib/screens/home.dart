@@ -26,12 +26,13 @@ class _HomeState extends State<Home>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: Colors.grey[800],
+      backgroundColor: Color(0xff121212),
       appBar: AppBar(
         title: Text(
           'Finance App',
           style: TextStyle(color: Colors.white),
         ),
+        backgroundColor: Color(0xff1f1f1f),
         elevation: 0.0,
         centerTitle: true,
         leading: Icon(Icons.menu),
@@ -51,6 +52,7 @@ class _HomeState extends State<Home>{
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
+          SizedBox(height: 10.0),
           OverviewGraph(),
           SizedBox(height: 30.0),
           Align(
@@ -69,15 +71,32 @@ class _HomeState extends State<Home>{
       ),
       bottomNavigationBar: BottomAppBar(
         shape: const CircularNotchedRectangle(),
-        child: Container(
-          height: 50.0,
+        child: Row(
+          mainAxisSize: MainAxisSize.max,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          
+          children: <Widget>[
+            IconButton(
+              icon: Icon(Icons.supervisor_account),
+              iconSize: 35.0,
+              onPressed: () => {},
+              color: Colors.white
+            ),
+            IconButton(
+              icon: Icon(Icons.today),
+              iconSize: 35.0,
+              onPressed: () => {},
+              color: Colors.white
+            )
+          ],
         ),
-        color: Colors.grey[700],
-        elevation: 5.0,
+        color: Color(0xff242424),
+        elevation: 10.0,
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add, color: Colors.black),
         backgroundColor: Colors.white,  
+        onPressed: () => {},
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
